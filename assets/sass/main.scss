@@ -1,0 +1,116 @@
+@import 'variables';
+
+.guest{
+	background: #F6F8FA;
+	min-height: 100vh;
+	padding: 0 !important;
+	.columns{
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;		
+		.guest-form{
+			background: #fff;
+			border-radius: 5px;
+			padding: 60px;
+		}
+	}
+}
+
+.auth{
+	nav{
+		height: $header-height;
+		.header-nav-left{
+			width: 20%;
+			float: left;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			img{
+				height: 30px;
+				width: 60px;
+			}
+		}
+		.header-nav-right{
+			display: flex;
+			justify-content: flex-end;
+			align-items:center;
+			height: 100%;
+			width: 80%;
+			padding-right: 20px;
+			.navbar-burger{
+				margin-left: 10px;
+			}
+		}
+	}
+	aside{		
+		background-color: #F1F6FF;
+		transition: max-height .5s ease-in-out;
+		&.is-active{
+			max-height: 300px;
+		}
+		@media screen and (min-width: 767px) {
+			min-height: calc(99vh - #{$header-height});
+		}
+		@media screen and (max-width: 767px) {
+			max-height: 0;
+			overflow: hidden;
+			padding: 0;
+		}
+	}
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.my-5{
+	margin: 5px 0 !important;
+}
+
+.mt-10{
+	margin-top: 10px !important;
+}
+
+.mb-30{
+	margin-bottom: 30px !important;
+}
+
+.ml-10{
+	margin-left: 10px !important;
+}
+
+.ml-5{
+	margin-left: 5px !important;
+}
+
+.justify-content-center{
+	justify-content: center;
+}
+
+.justify-content-end{
+	justify-content: flex-end;
+}
+
+.justify-content-between{
+	justify-content: space-between;
+}
+
+.align-items-center{
+	align-items: center;
+}
+
+.cursor-pointer{
+	cursor: pointer;
+}
+
+a{
+	line-height: 0px;
+}
+
+.datepicker .datepicker-content {
+    height: auto;
+}
+
+.datepicker .datepicker-table .datepicker-cell {
+    padding: 1.5rem 1.75rem !important;
+}
